@@ -25,6 +25,10 @@ A serverless AWS project that fetches real-time weather data using OpenWeatherMa
 
 ---
 
+## 🚀 Project Setup & Configuration
+
+Here’s a visual walkthrough of how this AWS Weather Notification project was built and configured.
+
 
 ### 1️⃣ OpenWeatherMap API Key
 ![API Key Screenshot]()  
