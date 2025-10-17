@@ -12,7 +12,7 @@ A serverless AWS project that fetches real-time weather data using OpenWeatherMa
 
 ---
 
-## 🛠 Tech Stack & AWS Services Used
+## 🔧 Technologies & Services
 - **AWS Lambda** - Executes Python script to fetch weather data
 - **Amazon SNS** - Sends notifications to subscribed email/phone
 - **Amazon EventBridge Scheduler** - Triggers Lambda function at scheduled times
@@ -21,26 +21,25 @@ A serverless AWS project that fetches real-time weather data using OpenWeatherMa
 
 ---
 
-## 📸 Screenshots
 
 ### 1️⃣ OpenWeatherMap API Key
-![API Key Screenshot](screenshots/api_key.png)  
+![API Key Screenshot]()  
 *API key was created to fetch weather data.*
 
 ### 2️⃣ AWS SNS Topic
-![SNS Topic](screenshots/sns_topic.png)  
+![SNS Topic]()  
 *SNS topic created to send notifications via email.*
 
 ### 3️⃣ Lambda Function
-![Lambda Function](screenshots/lambda_function.png)  
+![Lambda Function])  
 *Lambda function fetches weather and publishes message to SNS.*
 
 ### 4️⃣ CloudWatch Logs
-![CloudWatch Logs](screenshots/cloudwatch_log.png)  
+![CloudWatch Logs]()  
 *CloudWatch shows execution of Lambda function.*
 
 ### 5️⃣ EventBridge Schedule
-![EventBridge Schedule](screenshots/eventbridge_schedule.png)  
+![EventBridge Schedule]()  
 *EventBridge Scheduler triggers Lambda daily at 8 AM IST.*
 
 ---
