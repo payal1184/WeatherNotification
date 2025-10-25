@@ -60,7 +60,6 @@ Created an SNS topic to send notifications and subscribed an email.
 - **Purpose:** Deliver weather alerts via email/SMS  
 - **Email subscription:** Verified and confirmed  
 
-![SNS Topic Screenshot](image/Screenshot%20(153).png)
 ![SNS Topic Screenshot](image/Screenshot%20(170).png)
 ![SNS Topic Screenshot](image/Screenshot%20(171).png)
 
