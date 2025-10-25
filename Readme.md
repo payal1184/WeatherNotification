@@ -67,8 +67,7 @@ Created an SNS topic to send weather notifications.
 
 ![SNS Topic Screenshot](image/Screenshot%20(170).png)
 
-Configured SNS topic with a confirmed email subscription.  
-Alerts will be delivered to the subscriber's email using the Email protocol.
+Configured SNS topic with a confirmed email subscription. 
 
 ![SNS Topic Screenshot](image/Screenshot%20(171).png) 
 
