@@ -50,15 +50,19 @@ displays the Lambda function code editor, where the Python script fetches live w
 ---
 
 
-## 🔐 Step 6: IAM Roles & Policies
-Attached IAM roles and policies to Lambda for SNS publish permissions.  
+## 🔐 Step 3: IAM Roles & Policies
+  
+The IAM role allows the Lambda function to securely publish messages to SNS.  
 
-- **Service:** AWS IAM  
-- **Purpose:** Secure access management for Lambda function  
+![IAM Roles Screenshot](image/Screenshot%20(155).png)
 
-![IAM Roles Screenshot](images/iam_roles.png)
+Attached roles and policies to give Lambda the required permissions. 
+The role includes policies like AmazonSNSFullAccess and SNS Publish Policy.  
+These permissions enable the Lambda function to send notifications securely and reliably.  
 
-## ☁️ Step 3: Amazon SNS Topic
+![IAM Roles Screenshot](image/Screenshot%20(159).png)
+
+## ☁️ Step 4: Amazon SNS Topic
 Configured an SNS topic to send notifications to subscribers. 
 
 Alerts from the Lambda function are published to this SNS topic.  
@@ -71,7 +75,7 @@ SNS ensures reliable and timely delivery of messages.
 
 ---
 
-## 📅 Step 4: Amazon EventBridge Scheduler
+## 📅 Step 5: Amazon EventBridge Scheduler
 Scheduled a rule to trigger the Lambda function at regular intervals.  
 
 - **Service:** Amazon EventBridge (CloudWatch Event)  
@@ -82,16 +86,13 @@ Scheduled a rule to trigger the Lambda function at regular intervals.
 
 ---
 
-## 📖 Step 5: Amazon CloudWatch Logs
+## 📖 Step 6: Amazon CloudWatch Logs
 Monitored Lambda execution logs to ensure proper functioning and debug errors.  
 
 - **Service:** Amazon CloudWatch Logs  
 - **Purpose:** View function logs, track errors and notifications  
 
 ![CloudWatch Logs Screenshot](images/cloudwatch_logs.png)
-
----
-
 
 ---
 
