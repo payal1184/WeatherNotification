@@ -55,13 +55,15 @@ Created a Lambda function to fetch weather data from OpenWeatherMap API and publ
 
 
 ## ☁️ Step 3: Amazon SNS Topic
-Configured an SNS topic to send notifications to subscribers.  
+Configured an SNS topic to send notifications to subscribers. 
 
-![SNS Topic Screenshot](image/Screenshot%20(170).png)
-![SNS Topic Screenshot](image/Screenshot%20(171).png) 
 Alerts from the Lambda function are published to this SNS topic.  
 Subscribers receive notifications via email whenever a message is sent.  
 SNS ensures reliable and timely delivery of messages.
+
+![SNS Topic Screenshot](image/Screenshot%20(170).png)
+
+![SNS Topic Screenshot](image/Screenshot%20(171).png) 
 
 ---
 
