@@ -62,13 +62,13 @@ These permissions enable the Lambda function to send notifications securely and 
 ![IAM Roles Screenshot](image/Screenshot%20(159).png)
 
 ## ☁️ Step 4: Amazon SNS Topic
-Configured an SNS topic to send notifications to subscribers. 
 
-Alerts from the Lambda function are published to this SNS topic.  
-Subscribers receive notifications via email whenever a message is sent.  
-SNS ensures reliable and timely delivery of messages.
+Created an SNS topic to send weather notifications.   
 
 ![SNS Topic Screenshot](image/Screenshot%20(170).png)
+
+Configured SNS topic with a confirmed email subscription.  
+Alerts will be delivered to the subscriber's email using the Email protocol.
 
 ![SNS Topic Screenshot](image/Screenshot%20(171).png) 
 
