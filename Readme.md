@@ -41,16 +41,15 @@ Created an API key from OpenWeatherMap to fetch real-time weather data.
 ---
 
 ## 🖥️ Step 2: AWS Lambda Function
-Created a Lambda function to fetch weather data from OpenWeatherMap API and publish alerts to SNS.  
-
-- **Service:** AWS Lambda  
-- **Runtime:** Python 3.11  
-- **Purpose:** Execute serverless code  
-- **Permissions:** IAM Role attached with SNS Publish permission  
+Created a Lambda function to process weather data and send alerts.  
 
 ![Lambda Function Screenshot](image/Screenshot%20(149).png)
-![Lambda Function Screenshot](image/Screenshot%20(157).png)
+
 ![Lambda Function Screenshot](image/Screenshot%20(165).png)
+
+displays the Lambda function code editor, where the Python script fetches live weather data using OpenWeatherMap API and publishes notifications through Amazon SNS.
+
+![Lambda Function Screenshot](image/Screenshot%20(157).png)
 ---
 
 
