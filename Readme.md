@@ -31,27 +31,32 @@ Here’s a visual walkthrough of how this AWS Weather Notification project was b
 
 
 ## 🧩 Step 1: OpenWeatherMap API
-Created an API key from OpenWeatherMap to fetch real-time weather data.  
-
-- **Service:** OpenWeatherMap  
-- **Purpose:** Fetch current weather data via API  
+Created an API key from OpenWeatherMap to fetch real-time weather data.
+The API key allows the Lambda function to access current weather data.
 
 ![OpenWeatherMap API Screenshot](image/7d217b1f-d2f5-4267-82d2-5e9b7846814b.png)
 
 ---
 
 ## 🖥️ Step 2: AWS Lambda Function
+
 Created a Lambda function to process weather data and send alerts.  
 
 ![Lambda Function Screenshot](image/Screenshot%20(149).png)
-
-![Lambda Function Screenshot](image/Screenshot%20(165).png)
 
 displays the Lambda function code editor, where the Python script fetches live weather data using OpenWeatherMap API and publishes notifications through Amazon SNS.
 
 ![Lambda Function Screenshot](image/Screenshot%20(157).png)
 ---
 
+
+## 🔐 Step 6: IAM Roles & Policies
+Attached IAM roles and policies to Lambda for SNS publish permissions.  
+
+- **Service:** AWS IAM  
+- **Purpose:** Secure access management for Lambda function  
+
+![IAM Roles Screenshot](images/iam_roles.png)
 
 ## ☁️ Step 3: Amazon SNS Topic
 Configured an SNS topic to send notifications to subscribers. 
@@ -87,13 +92,6 @@ Monitored Lambda execution logs to ensure proper functioning and debug errors.
 
 ---
 
-## 🔐 Step 6: IAM Roles & Policies
-Attached IAM roles and policies to Lambda for SNS publish permissions.  
-
-- **Service:** AWS IAM  
-- **Purpose:** Secure access management for Lambda function  
-
-![IAM Roles Screenshot](images/iam_roles.png)
 
 ---
 
