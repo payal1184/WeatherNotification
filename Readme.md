@@ -56,8 +56,7 @@ The IAM role allows the Lambda function to securely publish messages to SNS.
 
 ![IAM Roles Screenshot](image/Screenshot%20(155).png)
 
-Attached roles and policies to give Lambda the required permissions. 
-The role includes policies like AmazonSNSFullAccess and SNS Publish Policy.  
+Attached roles and policies to give Lambda the required permissions.   
 These permissions enable the Lambda function to send notifications securely and reliably.  
 
 ![IAM Roles Screenshot](image/Screenshot%20(159).png)
