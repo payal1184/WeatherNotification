@@ -64,10 +64,9 @@ These permissions enable the Lambda function to send notifications securely and 
 ## ☁️ Step 4: Amazon SNS Topic
 
 Created an SNS topic to send weather notifications.   
+ubscription is confirmed to deliver alerts via email.
 
 ![SNS Topic Screenshot](image/Screenshot%20(170).png)
-
-Configured SNS topic with a confirmed email subscription. 
 
 ![SNS Topic Screenshot](image/Screenshot%20(171).png) 
 
