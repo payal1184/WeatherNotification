@@ -30,31 +30,79 @@ A serverless AWS project that fetches real-time weather data using OpenWeatherMa
 Here’s a visual walkthrough of how this AWS Weather Notification project was built and configured.
 
 
-### 1️⃣ OpenWeatherMap API Key
-![API Key Screenshot]()  
-*API key was created to fetch weather data.*
+## 🧩 Step 1: OpenWeatherMap API
+Created an API key from OpenWeatherMap to fetch real-time weather data.  
 
-### 2️⃣ AWS SNS Topic
-![SNS Topic]()  
-*SNS topic created to send notifications via email.*
+- **Service:** OpenWeatherMap  
+- **Purpose:** Fetch current weather data via API  
 
-### 3️⃣ Lambda Function
-![Lambda Function])  
-*Lambda function fetches weather and publishes message to SNS.*
-
-### 4️⃣ CloudWatch Logs
-![CloudWatch Logs]()  
-*CloudWatch shows execution of Lambda function.*
-
-### 5️⃣ EventBridge Schedule
-![EventBridge Schedule]()  
-*EventBridge Scheduler triggers Lambda daily at 8 AM IST.*
+![OpenWeatherMap API Screenshot](image/7d217b1f-d2f5-4267-82d2-5e9b7846814b.png)
 
 ---
 
-## ⚡ How to Run This Project
-1. Get an OpenWeatherMap API Key from [OpenWeatherMap](https://home.openweathermap.org/api_keys).  
-2. Create an SNS topic and subscribe your email/phone.  
-3. Deploy the Lambda Function in AWS Lambda.  
-4. Schedule the Lambda function using EventBridge Scheduler.  
-5. Check your email for daily weather notifications!
+## 🖥️ Step 2: AWS Lambda Function
+Created a Lambda function to fetch weather data from OpenWeatherMap API and publish alerts to SNS.  
+
+- **Service:** AWS Lambda  
+- **Runtime:** Python 3.11  
+- **Purpose:** Execute serverless code  
+- **Permissions:** IAM Role attached with SNS Publish permission  
+
+![Lambda Function Screenshot](image/Screenshot%20(149).png)
+![Lambda Function Screenshot](image/Screenshot%20(157).png)
+![Lambda Function Screenshot](image/Screenshot%20(165).png)
+---
+
+## ☁️ Step 3: Amazon SNS Topic
+Created an SNS topic to send notifications and subscribed an email.  
+
+- **Service:** Amazon SNS  
+- **Purpose:** Deliver weather alerts via email/SMS  
+- **Email subscription:** Verified and confirmed  
+
+![SNS Topic Screenshot](image/Screenshot%20(153).png)
+![SNS Topic Screenshot](image/Screenshot%20(170).png)
+![SNS Topic Screenshot](image/Screenshot%20(171).png)
+
+---
+
+## 📅 Step 4: Amazon EventBridge Scheduler
+Scheduled a rule to trigger the Lambda function at regular intervals.  
+
+- **Service:** Amazon EventBridge (CloudWatch Event)  
+- **Frequency:** Every 1 hour  
+- **Target:** Lambda function  
+
+![EventBridge Scheduler Screenshot](images/eventbridge_scheduler.png)
+
+---
+
+## 📖 Step 5: Amazon CloudWatch Logs
+Monitored Lambda execution logs to ensure proper functioning and debug errors.  
+
+- **Service:** Amazon CloudWatch Logs  
+- **Purpose:** View function logs, track errors and notifications  
+
+![CloudWatch Logs Screenshot](images/cloudwatch_logs.png)
+
+---
+
+## 🔐 Step 6: IAM Roles & Policies
+Attached IAM roles and policies to Lambda for SNS publish permissions.  
+
+- **Service:** AWS IAM  
+- **Purpose:** Secure access management for Lambda function  
+
+![IAM Roles Screenshot](images/iam_roles.png)
+
+---
+
+## 💻 Step 7: Testing & Notification
+Tested the Lambda function to verify:  
+
+1. Weather data fetched correctly  
+2. Alerts sent via SNS to subscribed email  
+
+![Email Notification Screenshot](images/email_notification.png)
+
+---
