@@ -104,10 +104,10 @@ Useful for debugging issues and verifying successful alert delivery.
 ---
 
 ## 💻 Step 7: Testing & Notification
-Tested the Lambda function to verify:  
 
-1. Weather data fetched correctly  
-2. Alerts sent via SNS to subscribed email  
+Tested the complete workflow by manually invoking the Lambda function.
+Verified successful message delivery through the subscribed email endpoint.
+Confirmed that real-time weather alerts are triggered automatically as expected.
 
 ![Email Notification Screenshot](images/email_notification.png)
 
