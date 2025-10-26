@@ -105,10 +105,11 @@ Useful for debugging issues and verifying successful alert delivery.
 
 ## 💻 Step 7: Testing & Notification
 
+
 Tested the Lambda function to verify:  
 
-1. Weather data fetched successfully  
-2. Alerts sent via SNS to subscribed email  
+**1.** Weather data fetched successfully 
+**2.** Alerts sent via SNS to subscribed email
 
 ![Email Notification Screenshot](images/email_notification.png)
 
