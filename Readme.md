@@ -105,9 +105,9 @@ Useful for debugging issues and verifying successful alert delivery.
 
 ## 💻 Step 7: Testing & Notification
 
-Tested the complete workflow by manually invoking the Lambda function.
-Verified successful message delivery through the subscribed email endpoint.
-Confirmed that real-time weather alerts are triggered automatically as expected.
+Executed a test run of the Lambda function to validate the end-to-end flow.  
+Confirmed that the EventBridge trigger and SNS integration worked seamlessly.  
+Email notification with real-time weather information was received successfully.
 
 ![Email Notification Screenshot](images/email_notification.png)
 
