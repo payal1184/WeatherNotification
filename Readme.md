@@ -64,10 +64,12 @@ These permissions enable the Lambda function to send notifications securely and 
 ## ☁️ Step 4: Amazon SNS Topic
 
 Created an SNS topic to send weather notifications.
-Email subscription is confirmed to receive alerts.
-Alerts are sent using the Email protocol.
+This topic acts as a communication channel for notifications.
 
 ![SNS Topic Screenshot](image/Screenshot%20(170).png)
+
+Email subscription is confirmed to receive weather alerts.
+Ensures that all notifications are successfully delivered to the user.
 
 ![SNS Topic Screenshot](image/Screenshot%20(171).png) 
 
@@ -75,22 +77,29 @@ Alerts are sent using the Email protocol.
 
 ## 📅 Step 5: Amazon EventBridge Scheduler
 Scheduled a rule to trigger the Lambda function at regular intervals.  
+Configured an EventBridge Scheduler to trigger the Lambda function at regular intervals.
+This ensures that the weather data is fetched and alerts are sent automatically without manual execution.
+The schedule runs the function reliably at the defined time interval.
 
-- **Service:** Amazon EventBridge (CloudWatch Event)  
-- **Frequency:** Every 1 hour  
-- **Target:** Lambda function  
+![EventBridge Scheduler Screenshot](image/Screenshot%20(163).png)
 
-![EventBridge Scheduler Screenshot](images/eventbridge_scheduler.png)
+![EventBridge Scheduler Screenshot](image/Screenshot%20(172).png)
 
 ---
 
 ## 📖 Step 6: Amazon CloudWatch Logs
-Monitored Lambda execution logs to ensure proper functioning and debug errors.  
 
-- **Service:** Amazon CloudWatch Logs  
-- **Purpose:** View function logs, track errors and notifications  
+Integrated Amazon CloudWatch Logs to monitor and verify Lambda function executions.
+Created a dedicated CloudWatch Log Group to store Lambda execution logs.
 
-![CloudWatch Logs Screenshot](images/cloudwatch_logs.png)
+![CloudWatch Logs Screenshot](image/Screenshot%20(166).png)
+
+Log streams capture detailed information about API responses, notifications, and errors.
+![CloudWatch Logs Screenshot](image/Screenshot%20(167).png)
+
+Displays detailed log events from each Lambda execution, including API responses and SNS confirmations.  
+Useful for debugging issues and verifying successful alert delivery.
+![CloudWatch Logs Screenshot](image/Screenshot%20(169).png)
 
 ---
 
