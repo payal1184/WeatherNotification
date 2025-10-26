@@ -105,9 +105,10 @@ Useful for debugging issues and verifying successful alert delivery.
 
 ## 💻 Step 7: Testing & Notification
 
-Executed a test run of the Lambda function to validate the end-to-end flow.  
-Confirmed that the EventBridge trigger and SNS integration worked seamlessly.  
-Email notification with real-time weather information was received successfully.
+Tested the Lambda function to verify:
+
+**1.** Real-time weather data was fetched successfully from OpenWeatherMap API.  
+**2.** Alerts were published through Amazon SNS and delivered to the subscribed email.
 
 ![Email Notification Screenshot](images/email_notification.png)
 
