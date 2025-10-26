@@ -105,10 +105,10 @@ Useful for debugging issues and verifying successful alert delivery.
 
 ## 💻 Step 7: Testing & Notification
 
-Tested the Lambda function to verify:
+Tested the Lambda function to verify:  
 
-**1.** Real-time weather data was fetched successfully from OpenWeatherMap API.  
-**2.** Alerts were published through Amazon SNS and delivered to the subscribed email.
+1. Weather data fetched successfully  
+2. Alerts sent via SNS to subscribed email  
 
 ![Email Notification Screenshot](images/email_notification.png)
 
