@@ -76,10 +76,10 @@ Ensures that all notifications are successfully delivered to the user.
 ---
 
 ## 📅 Step 5: Amazon EventBridge Scheduler
-Scheduled a rule to trigger the Lambda function at regular intervals.  
-Configured an EventBridge Scheduler to trigger the Lambda function at regular intervals.
-This ensures that the weather data is fetched and alerts are sent automatically without manual execution.
-The schedule runs the function reliably at the defined time interval.
+
+Configured Amazon EventBridge to trigger the Lambda function at regular intervals.  
+The schedule automates fetching weather data and sending alerts via SNS.  
+Ensures the workflow runs reliably without manual intervention.
 
 ![EventBridge Scheduler Screenshot](image/Screenshot%20(163).png)
 
